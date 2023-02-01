@@ -50,7 +50,7 @@ for n, l in tqdm(scraped_data.items()):
             cleaned_data[n] = None
             continue
         print(n)
-        print(*map('{} -> {}'.format, zip(range(len(l))), l), sep='\n')
+        print(*map('{} -> {}'.format, range(len(l)), l), sep='\n')
         i = input('Which one? ')
         if i != '':
             cleaned_data[n] = l[int(i)]
